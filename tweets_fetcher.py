@@ -23,7 +23,7 @@ def limit_handled(cursor):
 
 
 def get_number_of_pages():
-    number_of_tweets_config = int(config.NUM_TWEETS_TO_GRAB or "1000")
+    number_of_tweets_config = config.NUM_TWEETS_TO_GRAB
     max_number_of_tweets_allowed = min(
         MAX_NUMBER_OF_TWEETS_ALLOWED, number_of_tweets_config
     )
